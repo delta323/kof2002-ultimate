@@ -104,7 +104,7 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 
 ![King](imagenes/oswald/king.png)
 
-### 4.4 Chizuru Kagura (MUGEN de Vans)
+### 4.4 Chizuru Kagura
 
 - **Cómo se elige:** cursor sobre **Mai** + **Start**.
 - **Primer personaje traído de MUGEN:** sus 762 dibujos, animaciones, cajas y física del MUGEN, con el daño de KOF 2002.
@@ -115,7 +115,7 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 
 ![Chizuru y su doble](imagenes/chizuru/doble_especiales.png)
 
-### 4.5 Rock Howard (MUGEN de hirohiro)
+### 4.5 Rock Howard
 
 - **Cómo se elige:** cursor sobre **Joe** + **Start**.
 - **Hecho con el importador genérico de MUGEN:** sin código propio, todo sale de su ficha.
@@ -210,30 +210,6 @@ Aparte hay utilidades de **voces** (elegir en cada situación entre las voces de
 ![Editor de movimientos y sonidos](imagenes/herramientas/editor_movimientos.png)
 
 **Plan a futuro:** publicar el editor de Drive EX para que la comunidad diseñe movimientos. Revisaremos los archivos (equilibrio, espacio, que no rompan nada), los integraremos en la ROM y daremos crédito a cada autor.
-
----
-
-## 8. Versiones y hoja de ruta
-
-| Rama | Contenido | Público |
-|---|---|---|
-| **stable** | KOF 2002 Ultimate con los personajes ya terminados y probados. **Sin DRIVE** | Sí, cuando esté lista |
-| **master** | Lo más avanzado: todos los personajes nuevos. **Sin DRIVE** | Sí, como versión de desarrollo |
-| **drive** | Todos los personajes + DRIVE / Drive EX | No, hasta la BETA |
-
-| Fase | Contenido | Estado |
-|---|---|---|
-| 0 | Ingeniería inversa del motor y herramientas de prueba en MAME | Hecho |
-| 1 | Cartucho ampliado + driver propio en FBNeo / Fightcade | Hecho. Falta la prueba en red por internet |
-| 2 | **Hinako** | Hecha, en pruebas finales |
-| 3 | **Orochi Iori** | Muy avanzado, en pulido |
-| 4 | **Oswald** (KOF XI) | Completo, en revisión |
-| 5 | Importador de MUGEN + **Chizuru** y **Rock** | Hechos, en revisión |
-| 6 | Modo PRACTICE con datos en pantalla | Hecho, en pruebas |
-| 7 | **Violent Ken** y los siguientes | En curso |
-| 8 | **Versión STABLE 1.0** | Siguiente objetivo de publicación |
-| 9 | DRIVE / Drive EX en **BETA** pública | Al final |
-| 10 | Editor de Drive EX para la comunidad | Futuro |
 
 ---
 
