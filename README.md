@@ -2,14 +2,24 @@
 
 **Español** | [English](README.en.md)
 
-Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nuevos sacados de otros juegos de lucha** (KOF 2001, 2003, XI, SVC Chaos, KOF 2002 UM y personajes de MUGEN) sin quitar a ninguno de los 41 originales, un **modo de práctica con datos en pantalla** y, más adelante, un sistema de mecánicas nuevas llamado **DRIVE / DRIVE EX**. Está pensado para jugar **en línea por Fightcade**.
+Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nuevos sacados de otros juegos de lucha** (KOF 2001, 2003, XI, SVC Chaos y KOF 2002 UM) sin quitar a ninguno de los 41 originales, un **modo de práctica con datos en pantalla** y, más adelante, un sistema de mecánicas nuevas llamado **DRIVE / DRIVE EX**. Está pensado para jugar **en línea por Fightcade**.
 
 > **Este repositorio solo recoge la descripción del proyecto, su hoja de ruta y el avance en imágenes.**
 > Aquí no hay ROM, BIOS, código, herramientas ni emuladores. Para jugar hará falta tener los juegos originales de forma legal; el formato de distribución está por decidir (§9).
 
 *Estado al 7 de noviembre de 2026.*
 
-![Retratos de los personajes nuevos](imagenes/personajes/retratos_nuevos.png)
+---
+
+## Roster actual: personajes nuevos
+
+| ![Hinako](imagenes/roster/hinako.png) | ![Chizuru](imagenes/roster/chizuru.png) | ![Oswald](imagenes/roster/oswald.png) | ![Rock](imagenes/roster/rock.png) |
+|:---:|:---:|:---:|:---:|
+| **Hinako Shijou** | **Chizuru Kagura** | **Oswald** | **Rock Howard** |
+| KOF 2002 UM | KOF 2003 | KOF XI | KOF 2003 |
+| Start sobre Athena | Start sobre Mai | Start sobre Blue Mary | Start sobre Joe |
+
+Además: **Orochi Iori** (SVC Chaos), que sale con el *Awakening* de Iori en pleno combate, y **Violent Ken** (SVC Chaos), en camino. Se suman a los 41 personajes originales de KOF 2002, que siguen todos.
 
 ---
 
@@ -43,7 +53,7 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 
 - **Ingeniería inversa del motor.** Se ha documentado el programa del 68000 (personajes, animaciones, cajas, golpes, paletas, sonidos, menús), siempre midiendo en MAME.
 - **Varios juegos, el mismo motor.** KOF 2001, 2002, 2003, SVC Chaos y UM comparten estructuras, así que sus datos se **traducen** al formato de 2002. KOF XI se descifró aparte.
-- **Importador de MUGEN.** Lee los archivos de un personaje de MUGEN (dibujos, animaciones, cajas, estados, sonidos) y lo convierte al cartucho con un **intérprete** en ensamblador 68000. Las **cajas** quedan tal cual las del MUGEN y el **daño** siempre como en KOF 2002. Un **comparador** pone frame a frame el MUGEN de verdad junto al cartucho.
+- **Importador de personajes.** Convierte los datos de un personaje (dibujos, animaciones, cajas, estados, sonidos) al cartucho con un **intérprete** en ensamblador 68000. El **daño** siempre es el de KOF 2002. Un **comparador** pone frame a frame el original junto al cartucho.
 - **Nada original se pisa.** Lo nuevo vive en espacio libre del cartucho ampliado. Cada cambio se comprueba con una huella de los 41 originales (tiene que dar 41/41) y, sin ediciones, el cartucho debe salir idéntico (mismo CRC).
 - **Pruebas automáticas en MAME.** Combates por script sin ventana, lectura de RAM, registro de sonidos y partidas al azar para buscar cuelgues.
 - **Herramientas para editar sin programar.** Páginas locales en el navegador para animaciones, efectos, cajas, voces, colores (estilo **PalMod**), retratos y Drive EX. Lo que se edita entra en el siguiente build (§7).
@@ -57,7 +67,7 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 - **Cómo se elige:** cursor sobre **Athena** + **Start**.
 - **Jugabilidad:** basada en **KOF 2002 UM**: normales, normales de comando, combos de cadena, agarres, especiales (Tsukidashi, Shiko Toumi, Gorin Tsuki, Harite…) y supers, con un **HIDDEN nuevo, *Daisyarin***.
 - **Gráficos y sonido:** dibujos de KOF 2003, voces de KOF 2001, retratos de selección, barra de vida y victoria.
-- **Extras:** supercancel en MAX, poses de agarre sacadas de su MUGEN.
+- **Extras:** supercancel en MAX.
 - **Estado:** todos los pasos hechos. Falta su prueba final y la prueba en red.
 
 | | |
@@ -85,8 +95,8 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 
 - **Cómo se elige:** cursor sobre **Blue Mary** + **Start**.
 - **Gráficos y sonido:** sus 828 dibujos de KOF XI, idénticos al original, y sus 59 voces y efectos.
-- **Jugabilidad:** su **baraja** (Spade, Diamond, Club, Heart, Queen, King…) con la cadena y el **Ace** como en su MUGEN de KOF Definitive Match; normales, físicas y agarres de KOF XI; búfer de comandos como el de KOF XI.
-- **Supers:** **Four Suits** (DM), **Royal Flush** (DM y SUPER MAX, con la animación y las cartas de su MUGEN Final Attack) y **Joker** (HIDDEN, con fondo negro). El **King** funciona como contraataque.
+- **Jugabilidad:** su **baraja** (Spade, Diamond, Club, Heart, Queen, King…) con la cadena y el **Ace**; normales, físicas y agarres de KOF XI; búfer de comandos como el de KOF XI.
+- **Supers:** **Four Suits** (DM), **Royal Flush** (DM y SUPER MAX, con su animación y sus cartas) y **Joker** (HIDDEN, con fondo negro). El **King** funciona como contraataque.
 - **Estado:** completo, en revisión.
 
 ![Royal Flush](imagenes/oswald/royal_flush.png)
@@ -98,10 +108,10 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 ### 4.4 Chizuru Kagura
 
 - **Cómo se elige:** cursor sobre **Mai** + **Start**.
-- **Primer personaje traído de MUGEN:** sus 762 dibujos, animaciones, cajas y física del MUGEN, con el daño de KOF 2002.
-- **Especiales:** Tamayura (escudo que devuelve proyectiles), Tenjin, Shinsoku + Tenzui y Choumon, con **su doble** como en el MUGEN.
-- **Supers:** DM *Reigi no Ishizue* y *Sanrai no Fujin*, sus SUPER MAX y el HIDDEN *Sanjingi no San*. El Sanrai se midió frame a frame contra el MUGEN de verdad.
-- **Sonido y retratos:** sus voces del MUGEN, a elegir en la utilidad de voces, y sus retratos.
+- **Dibujos y animaciones:** sus 762 dibujos, animaciones, cajas y física, con el daño de KOF 2002.
+- **Especiales:** Tamayura (escudo que devuelve proyectiles), Tenjin, Shinsoku + Tenzui y Choumon, con **su doble**.
+- **Supers:** DM *Reigi no Ishizue* y *Sanrai no Fujin*, sus SUPER MAX y el HIDDEN *Sanjingi no San*. El Sanrai se midió frame a frame contra el original.
+- **Sonido y retratos:** sus voces, a elegir en la utilidad de voces, y sus retratos.
 - **Estado:** fases 1-5 hechas, en revisión.
 
 ![Chizuru y su doble](imagenes/chizuru/doble_especiales.png)
@@ -109,10 +119,10 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 ### 4.5 Rock Howard
 
 - **Cómo se elige:** cursor sobre **Joe** + **Start**.
-- **Hecho con el importador genérico de MUGEN:** sin código propio, todo sale de su ficha.
+- **Hecho con el importador genérico:** sin código propio, todo sale de su ficha.
 - **Especiales:** Reppuu Ken, Double Reppuu Ken, Hard Edge, Rising Tackle, Shinkuu Nage…
 - **Supers:** DM *Raging Storm* y *Shine Knuckle*, sus versiones MAX y el HIDDEN *Deadly Rave* con su cadena de botones.
-- **Sonido:** 103 situaciones con las voces de su MUGEN.
+- **Sonido:** 103 situaciones con sus propias voces.
 - **Estado:** fases 1-5 hechas, en revisión.
 
 ![Rock: especial](imagenes/rock/especial.png)
@@ -121,7 +131,7 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 
 ### 4.6 Violent Ken (en camino)
 
-- Sale del MUGEN *The King of Fighters Final Attack* y de **SVC Chaos**, de donde vienen sus dibujos.
+- Sale de **SVC Chaos**, de donde vienen sus dibujos.
 - Se elegirá con **Start sobre Ryo**. Ya está medido y planificado; sus supers serán los del SVC.
 
 ### 4.7 Cómo se trae un personaje (8 fases)
@@ -208,5 +218,5 @@ Aparte hay utilidades de **voces** (elegir en cada situación entre las voces de
 
 - **Este repositorio nunca contendrá** ROM, BIOS, archivos de juegos de SNK u otras compañías ni emuladores con esos datos.
 - La forma de publicar las versiones jugables está **por decidir**. Probablemente serán parches que se aplican sobre los romsets originales del jugador, junto con el driver para FBNeo / Fightcade.
-- **Créditos de MUGEN:** Chizuru Kagura de **Vans** y Rock Howard de **hirohiro**. Los créditos completos irán en la versión publicada.
+- Los créditos completos a los autores irán en la versión publicada.
 - *The King of Fighters*, sus personajes y sus gráficos son propiedad de **SNK**. Es un proyecto de fans, sin ánimo de lucro.
