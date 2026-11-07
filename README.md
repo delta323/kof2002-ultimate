@@ -21,17 +21,6 @@ Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nue
 | Dónde se juega | FBNeo y **Fightcade** (en línea), con un driver propio. Todo va dentro del cartucho: nada de scripts ni trucos del emulador |
 | Qué NO es | No es un motor nuevo: es el motor de KOF 2002 con datos y rutinas añadidos |
 
-### Personajes nuevos de un vistazo
-
-| Personaje | De dónde sale | Cómo se elige | Estado |
-|---|---|---|---|
-| **Hinako Shijou** | KOF 2002 UM / 2003 / 2001 | Start sobre **Athena** | Completa, en pruebas finales |
-| **Orochi Iori** | SVC Chaos | **Awakening** de Iori durante el combate | Muy avanzado: todo hecho, en pulido |
-| **Oswald** | KOF XI + su MUGEN | Start sobre **Blue Mary** | Completo, en revisión |
-| **Chizuru Kagura** | MUGEN (Vans) | Start sobre **Mai** | Completa (fases 1-5), en revisión |
-| **Rock Howard** | MUGEN (hirohiro) | Start sobre **Joe** | Fases 1-5 hechas, en revisión |
-| **Violent Ken** | MUGEN + SVC Chaos | Start sobre **Ryo** | Empezado (fase 1: medido y planificado) |
-
 ---
 
 ## 2. Glosario
