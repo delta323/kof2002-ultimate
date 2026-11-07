@@ -1,5 +1,7 @@
 # THE KING OF FIGHTERS 2002 ULTIMATE
 
+**Español** | [English](README.en.md)
+
 Romhack de **The King of Fighters 2002 Plus** (Neo Geo). Añade **personajes nuevos sacados de otros juegos de lucha** (KOF 2001, 2003, XI, SVC Chaos, KOF 2002 UM y personajes de MUGEN) sin quitar a ninguno de los 41 originales, un **modo de práctica con datos en pantalla** y, más adelante, un sistema de mecánicas nuevas llamado **DRIVE / DRIVE EX**. Está pensado para jugar **en línea por Fightcade**.
 
 > **Este repositorio solo recoge la descripción del proyecto, su hoja de ruta y el avance en imágenes.**
